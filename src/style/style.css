@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Continue para as outras variações de peso e estilo... */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.icon-mobile {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
+body {
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(40,29,253,1) 100%);
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 10vh;
+    color: aliceblue;
+    padding: 30px;
+}
+
+.text-name-logo{
+    font-size: 23px;
+    transition: all  1s ease;
+}
+
+.animation-360 {
+    transform: rotate(360deg);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+header li {
+    transition: all .55s ease;
+}
+
+header li:hover {
+    transform: translateY(-20px);
+}
+
+header ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn-getStarted button {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(131,58,180,1);
+    box-shadow: 1px 0px 30px #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    transition: all .55s ease;
+}
+
+.Welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+}
+
+.text {
+    width: 25vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.text h1 {
+    font-size: 60px;
+}
+
+@media screen and (max-width:730px) {
+    .btn-getStarted button {
+        display: none;
+    }
+    header ul {
+        display: none;
+    }
+    .icon-mobile{
+        display: flex;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    #close {
+        display: none;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    .center {
+        padding: 0px;
+    }
+    .text h1 {
+        font-size: 30px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text {
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 100px;
+        right: 95px;
+        display: flex;
+        width: 40vw;
+        height: 40vh;
+        background-color: transparent;
+        box-shadow: .5px 0px 30px #000000;
+        align-items: center;
+        transition: all .88s ease;
+        border-radius: 30px;
+        opacity: 0;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        justify-content: space-between;
+    }
+    .mobile-menu li {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        border-radius: 50px;
+    }
+    .mobile-menu a {
+        color: white;
+        font-size: 25px;
+    }
+
+}
